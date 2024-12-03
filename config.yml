@@ -1,0 +1,39 @@
+# Example of a YAML configuration file
+
+app:
+  name: "MyAwesomeApp"
+  version: "1.0.0"
+  description: "This is an amazing app that does awesome things."
+
+server:
+  host: "localhost"
+  port: 8080
+  ssl: false
+
+database:
+  type: "mysql"
+  host: "127.0.0.1"
+  port: 3306
+  username: "admin"
+  password: "secret123"
+  name: "myapp_db"
+
+logging:
+  level: "debug"
+  file: "/var/log/myapp.log"
+
+users:
+  - username: "johndoe"
+    role: "admin"
+    active: true
+  - username: "janedoe"
+    role: "editor"
+    active: true
+  - username: "guestuser"
+    role: "guest"
+    active: false
+
+features:
+  authentication: true
+  notifications: true
+  payments: false
